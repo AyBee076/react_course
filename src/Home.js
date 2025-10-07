@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react';
+
+import { Router } from 'react-router-dom';
 import BlogList from './BlogList'
 import useFetch from './useFetch';
 
@@ -7,6 +8,7 @@ const Home = () => {
 
 
     return (
+
         <div className="home">
             { error && <div> { error } </div> }
             {isPending && <div> Loading....</div>}
